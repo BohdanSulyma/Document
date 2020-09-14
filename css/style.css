@@ -1,0 +1,12 @@
+.Hello {
+  font-size: 50px;
+  color: chocolate;
+}
+
+.Color > li {
+  color: crimson;
+}
+.string span {
+  font-size: 8;
+  background-color: darkgreen;
+}
