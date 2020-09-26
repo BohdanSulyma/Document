@@ -1,0 +1,87 @@
+body {
+  background-image: url(img/1_1508314489.png);
+  background-image: fixed;
+  font-family: "Times new Roman", "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgba(126, 106, 110, 0.212);
+}
+
+p {
+  font-size: 23px;
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  margin: auto auto auto auto;
+  background-color: rgba(51, 51, 211, 0.534);
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+#survey-form {
+  display: flex;
+  justify-content: center;
+  border: 1px rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  margin: auto 5% auto 5%;
+}
+.form-control {
+  width: 90%;
+  height: 25px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+  background-color: white;
+}
+.form-control:hover {
+  background: whitesmoke;
+}
+
+label {
+  display: flex;
+  text-align: left;
+  padding: 15px 0px 1px 30px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+#dropdown {
+  width: 90%;
+  height: 25px;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+  background-color: white;
+}
+.input-textarea {
+  min-height: 100px;
+  width: 90%;
+  padding: 0.625rem;
+}
+#submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: rgb(67, 67, 245);
+  color: inherit;
+  border-radius: 2px;
+  font-size: 25px;
+}
+#submit-button:hover {
+  background-color: rgb(248, 239, 201);
+  color: rgba(10, 10, 143, 0.63);
+  font-weight: 700;
+}

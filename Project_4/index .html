@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>java Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Java programming language"></a>Java
+          programming language
+        </li>
+        <li>
+          <a href="#What you should already know"></a>What you should already
+          know
+        </li>
+        <li><a class="nav-link" href="#Java features"></a>Java features</li>
+        <li>
+          <a class="nav-link" href="#Program structure"></a>Program structure
+        </li>
+        <li>
+          <a class="nav-link" href="#Program execution. Main method"></a>Program
+          execution. Main method
+        </li>
+        <li><a class="nav-link" href="#Comments"></a>Comments</li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section">
+        <header>Java programming language</header>
+        <p>
+          Today the Java language is one of the most widespread and popular
+          programming languages. The first version of the language appeared back
+          in 1996 in the bowels of Sun Microsystems, which was later acquired by
+          Oracle. Java was conceived as a universal programming language that
+          can be used for various kinds of tasks. And by now the Java language
+          has come a long way, with many different versions published. The
+          current version is Java 12, which was released in March 2019. And Java
+          has evolved from just a universal language into a whole platform and
+          ecosystem that unites various technologies used for a range of tasks:
+          from creating desktop applications to writing large web portals and
+          services. In addition, the Java language is actively used to create
+          software for many devices: ordinary PCs, tablets, smartphones and
+          mobile phones, and even household appliances. Suffice it to recall the
+          popularity of the Android mobile OS, most of the programs for which
+          are written in Java.
+        </p>
+      </section>
+      <section class="main-section">
+        <header>What you should already know</header>
+        <p>his guide assumes you have the following basic background:</p>
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web
+            (WWW).
+          </li>
+          <li>Good working knowledge of HyperText Markup Language (HTML)</li>
+          <li>
+            Some programming experience. If you are new to programming, try one
+            of the tutorials linked on the main page about JavaScript.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>Java features</header>
+        <p>
+          A key feature of the Java language is that its code is first
+          translated into a special platform-independent bytecode. And then this
+          bytecode is executed by the JVM (Java Virtual Machine). In this
+          respect, Java differs from standard interpreted languages ​​like PHP
+          or Perl, whose code is immediately executed by the interpreter. At the
+          same time, Java is not a purely compiled language like C or C ++.
+        </p>
+        <p>
+          This architecture provides cross-platform and hardware portability of
+          Java programs, so that such programs can be run on various platforms
+          without recompilation - Windows, Linux, Mac OS, etc. Each platform may
+          have its own implementation of the JVM virtual machine, but each of
+          them can execute the same code.
+        </p>
+        <p>
+          Java is a language with a C-like syntax and is close in this respect
+          to C / C ++ and C #. Therefore, if you are familiar with one of these
+          languages, it will be easier to master Java.
+        </p>
+        <p>
+          Another key feature of Java is that it supports automatic garbage
+          collection. This means that you do not need to manually free memory
+          from previously used objects, as in C ++, since the garbage collector
+          will do this automatically for you.
+        </p>
+        <p>
+          Java is an object oriented language. It supports polymorphism,
+          inheritance, static typing. The object-oriented approach allows you to
+          solve the problems of building large, but at the same time flexible,
+          scalable and extensible applications.
+        </p>
+      </section>
+      <section class="main-section">
+        <header>Program structure</header>
+        <p>
+          The basic building block of a Java program is a statement. Each
+          statement performs some action, such as calling methods, declaring
+          variables, and assigning values to them. A semicolon (;) is inserted
+          after the statement is completed in Java. This mark indicates to the
+          compiler the end of the instruction. For example:
+        </p>
+        <code> System.out.println("Hello Java!"); </code>
+        <p>
+          This line represents a call to the System.out.println method that
+          prints the string "Hello Java!" To the console. In this case, the
+          method call is an instruction and therefore ends with a semicolon.
+        </p>
+        <p>
+          In addition to individual instructions, a code block is a common
+          construction. A block of code contains a set of instructions, it is
+          enclosed in curly braces, and the instructions are placed between the
+          opening and closing curly braces:
+          <code>
+            { System.out.println("Hello!"); System.out.println("Welcome to
+            Java!"); }
+          </code>
+          This block of code contains two statements that output a specific line
+          to the console.
+        </p>
+      </section>
+      <section class="main-section">
+        <header>Program execution. Main method</header>
+        <p>
+          Java is an object-oriented language, so the entire program can be
+          thought of as a collection of interacting classes and objects. In the
+          first chapter, when creating the first application, the program was
+          defined as follows:
+        </p>
+        <code>
+          public class Program{ public static void main (String args[]){
+          System.out.println("Hello Java!"); } }
+        </code>
+
+        <ul>
+          <li>
+            That is, the basis of our program is the Program class. When
+            defining a class, first comes the <strong>access</strong> modifier,
+            which indicates that this class will be available to everyone, that
+            is, we can run it from the command line. Next comes the class
+            keyword, and then the class name. After the name of the
+            <strong>class</strong> , there is a block of code in which the
+            contents of the class are located.
+          </li>
+          <li>
+            The entry point to a Java program is the
+            <strong>main</strong> method, which is defined in the Program class.
+            It is with him that the execution of the program begins. He must be
+            present in the program. Moreover, its title can only be as follows:
+          </li>
+        </ul>
+        <code> public static void main (String args[]) </code>
+        <p>
+          When the application starts, the Java virtual machine looks for a main
+          method with a similar header in the main class of the program, and
+          when it is found, it starts it.
+        </p>
+        <p>
+          The method header is preceded by the public modifier, which indicates
+          that the method will be accessible from outside. The word static
+          indicates that the main method is static, and the word void indicates
+          that it does not return any value. Next, in parentheses, we have the
+          method parameters - String args [] is an args array that stores values
+          ​​of type String, that is, strings. When starting the program through
+          this array, we can transfer various data to the program.
+        </p>
+        <p>
+          The method header is followed by its block, which contains a set of
+          executable instructions.
+        </p>
+      </section>
+      <section class="main-section">
+        <header>Comments</header>
+        <p>
+          The program code may contain comments. Comments allow you to
+          understand the meaning of the program, what certain parts of it do.
+          When compiled, comments are ignored and have no effect on application
+          performance or size.
+        </p>
+        <p>
+          There are two types of comments in Java: single-line and multi-line. A
+          single line comment is placed on one line after the double slash //. A
+          multi-line comment is enclosed between / * comment text * /. It can
+          span multiple lines. For example:
+        </p>
+        <code>
+          /* многострочный комментарий Объявление нового класса, который
+          содержит код программы */ public class Program{ // начало объявления
+          класса Program // определение метода main public static void main
+          (String args[]){ // объявление нового метода System.out.println("Hello
+          Java!"); // вывод строки на консоль } // конец объявления нового
+          метода } // конец объявления класса Program
+        </code>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to take the social survey .
+      </p>
+    </header>
+    <div class="container">
+      <form id="survey-form" action="#" method="POST">
+        <div class="main">
+          <div>
+            <label for="name" id="name-label">Name</label>
+          </div>
+          <div>
+            <input
+              id="name"
+              placeholder="Enter you name"
+              type="text"
+              name="username"
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label id="email-label" for="email">Email </label>
+          </div>
+          <div>
+            <input
+              id="email"
+              placeholder="Enter your email address"
+              type="email"
+              name="email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div><label for="number" id="number-label">Phone number</label></div>
+          <div>
+            <input
+              id="number"
+              placeholder="Enter you number phone "
+              type="phone"
+              name="phone"
+              class="form-control"
+              required
+            />
+          </div>
+          <div>
+            <label for="Age" id="Age-label">Age</label>
+          </div>
+          <div>
+            <input
+              id="Age"
+              type="number"
+              name="age"
+              min="16"
+              max="100"
+              class="form-control"
+              placeholder="Enter you age "
+              required
+            />
+          </div>
+          <div id="role">
+            <p>Which option best describes your current role?</p>
+          </div>
+          <div>
+            <select name="role" id="dropdown">
+              <option value="role">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <p>Do you see positive changes in Ukraine over the last year?</p>
+            <label>
+              <input
+                class="radio-control"
+                type="radio"
+                name="user-recommend"
+                value="Yes"
+              />Yes</label
+            >
+            <div>
+              <label
+                ><input
+                  class="radio-control"
+                  type="radio"
+                  name="user-recommend"
+                  value="No"
+                />
+                No
+              </label>
+            </div>
+          </div>
+          <div>
+            <p>
+              Which of the presidents impressed the most.
+              <span>(You can choose multiple answers)</span>
+            </p>
+            <div>
+              <div>
+                <label
+                  ><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Leonid Makarovych Kravchuk</label
+                >
+              </div>
+              <div>
+                <label>
+                  <input
+                    name="prefer"
+                    value="back-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Kuchma Leonid Danilovich</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input
+                    name="prefer"
+                    value="data-visualization"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Yushchenko Victor Andreevich</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input
+                    name="prefer"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Yanukovych Viktor Fedorovich</label
+                >
+              </div>
+
+              <div>
+                <label
+                  ><input
+                    name="prefer"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Poroshenko Petro Oleksiyovych</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input
+                    name="prefer"
+                    value="challenges"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Zelensky Vladimir Alexandrovich</label
+                >
+              </div>
+            </div>
+            <div>
+              <p>What kind of social survey would you like to conduct?Why?</p>
+              <textarea
+                class="input-textarea"
+                id="comments"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+            <button id="submit-button" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
