@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0 0 30px 0;
+  padding: 30px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+h1 {
+  font-family: "Times New Roman", cursive;
+  font-size: 70px;
+  margin-bottom: 0px;
+  color: brown;
+}
+h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 30px;
+  margin: 0 auto 10px auto;
+  width: 80%;
+  color: brown;
+}
+p {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 20px;
+  color: brown;
+}
+ul {
+  margin: auto;
+  max-width: 700px;
+}
+li {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 25px;
+  margin: 20px 0;
+  color: brown;
+}
+#main {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+#img-div {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  margin: auto auto auto auto;
+  width: 60%;
+}
+figure {
+  margin: auto;
+  padding: 5px;
+  width: 90%;
+}
+#image {
+  display: block;
+  margin: 40px auto 20px auto;
+  max-width: 100%;
+}
+figcaption {
+  font-family: "Time new Rome", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: brown;
+}
+
+#tribute-info {
+  margin-bottom: 20px;
+}
+.link-text {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 30px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  width: 80%;
+  color: brown;
+}
+#tribute-link {
+  text-decoration: none;
+}
